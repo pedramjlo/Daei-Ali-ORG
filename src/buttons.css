@@ -1,0 +1,9 @@
+button div {
+    display: inline;
+    margin: 5px;
+    text-align: center;
+    width: 12em;
+    height: 1.3em;
+    color: black;
+    font-weight: bold;
+}

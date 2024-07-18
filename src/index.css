@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
 
 * {
-  box-sizing: border-box;
   font-family: "Beiruti", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -20,6 +19,10 @@ header {
   top: 0;
   background-color: white;
   min-width: 100%;
+}
+
+button {
+  color: black;
 }
 
 .logo-header img{

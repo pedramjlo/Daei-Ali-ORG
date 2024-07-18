@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from './header';
+import MenuButton from './menu-btn';
+import MessageButton from './message-btn';
 import '../home.css';
 
 
@@ -21,6 +23,12 @@ export default function Home() {
 
         <div className='home-illust'>
           <img src="./icons/home-illust.svg" alt="phone illustration" />
+        </div>
+
+
+        <div className='home-btns'> 
+          <MenuButton />
+          <MessageButton />
         </div>
 
 
