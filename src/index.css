@@ -31,10 +31,22 @@ button {
   border-radius: 5px;
 }
 
+.zoodex-header img {
+  height: 2em;
+  width: 3em;
+}
+
+
 .logo-header {
   position: absolute;
   top: 1.7vh;
   left: 3vh;
+}
+
+.zoodex-header {
+  position: absolute;
+  top: 1.7vh;
+  right: 4vh;
 }
 
 
