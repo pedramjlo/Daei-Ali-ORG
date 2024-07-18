@@ -16,13 +16,11 @@ export default function MessageButton(){
     return (
         <button className="menu-button"> 
 
-        <div>
-        <FaRegMessage style={iconStyle}  />
-        </div>
-
-        <div>
+        <span>
         ثبت پیام
-        </div>
+        </span>
+
+        <FaRegMessage style={iconStyle}  />
 
         
         </button>

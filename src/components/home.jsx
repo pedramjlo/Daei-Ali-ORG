@@ -26,7 +26,7 @@ export default function Home() {
         </div>
 
 
-        <div className='home-btns'> 
+        <div className='buttons-container'> 
           <MenuButton />
           <MessageButton />
         </div>

@@ -10,19 +10,18 @@ export default function MenuButton(){
 
     const iconStyle = {
         color: "black", 
-        fontSize: "1em",
+        fontSize: "1.2em",
+        
     };
 
     return (
         <button className="menu-button"> 
 
-        <div>
-        <MdOutlineFastfood style={iconStyle}  />
-        </div>
-
-        <div>
+        <span>
         برو به منو
-        </div>
+        </span>
+
+        <MdOutlineFastfood style={iconStyle}  />
 
         
         </button>

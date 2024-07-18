@@ -2,7 +2,7 @@ body, html {
     width: 100%;
 }
 
-h1 {
+h2 {
     color: white;
 }
 
@@ -14,10 +14,11 @@ h1 {
 
 
 
+
 .welcome-text {
-    position: relative;
-    margin-top: 14%;
-    margin-left: 7%;
+    letter-spacing: 2px;
+    margin-top: 10%;
+    margin-left: 6%;
     margin-right: 2%;
 }
 
@@ -42,18 +43,21 @@ h1 {
 }
 
 .home-illust {
+    position: absolute;
+    top: 38%;
     margin-left: 20%;
 }
 
-.home-btns {
-    display: flex;
-    justify-content: center;
-}
-
 .buttons-container {
+    margin-top: 50%;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+
 }
+
 
 
 @media only screen and (min-width: 320px){
