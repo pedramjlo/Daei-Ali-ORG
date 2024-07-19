@@ -15,6 +15,9 @@ export default function Home() {
       <Header />
       <div className='home-container'>
 
+
+        <section className='section1'>
+
         <h2 className='welcome-text'>به دایی علی (شعبه جدید) خوش آمدید</h2>
 
         <div className='description-1'>
@@ -32,15 +35,19 @@ export default function Home() {
           <MessageButton />
         </div>
 
+        </section>
+
 
         <div className='bounce'>
             <BouncingArrow loading="lazy" />
         </div> 
 
 
+       <section className='section2'>
         <div className='menu-groups'>
-          <MenuGroups loading="lazy" />
-        </div>
+            <MenuGroups loading="lazy" />
+          </div>
+       </section>
 
 
 

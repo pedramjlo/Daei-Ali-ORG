@@ -1,9 +1,10 @@
-/* Card.css */
+
 .card {
-    border: 1px solid #ddd;
+    border: 0.5px solid #ddd;
     margin: 10px 23px;
     padding: 5px;
     transition: all 0.3s ease;
+    background-color: #FF5F1F;
 }
 
 .card-header {
@@ -11,8 +12,11 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    font-weight: bold;
     cursor: pointer;
+}
+
+.card-title, .card-price {
+    color: white;
 }
 
 .card-title {
@@ -22,20 +26,24 @@
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 700;
+
 }
 
 .card-price {
     flex: 1;
     text-align: left;
-    color: black;
 }
 
 .card-content {
-    padding: 10px 0;
+    text-align: center;
 }
 
 .card.expanded {
-    background-color: #f9f9f9;
-    padding: 20px;
+    background-color: #FF5F1F;
+    padding: 12px;
+}
+
+.card.expanded .card-title, .card.expanded .card-price {
+    color: white;
 }
