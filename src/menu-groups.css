@@ -16,5 +16,22 @@ ul li {
     justify-content: space-around;
     padding-right: 5%;
     padding-left: 5%;
+    border-bottom: 0.5 solid white;
 
+}
+
+
+
+.menu-list a.active {
+    background-color: white;
+    border-radius: 10px;
+    width: 5px;
+    height: fit-content;
+    color: #FF5F1F;
+    padding: 4px;
+}
+
+.content {
+    margin-top: 20px;
+    /* Additional styling for content */
 }
