@@ -14,10 +14,10 @@ ul li {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
     border-bottom: 0.5 solid white;
-
+    gap: 5px;
 }
 
 
@@ -25,7 +25,7 @@ ul li {
 .menu-list a.active {
     background-color: white;
     border-radius: 10px;
-    width: 5px;
+    width: 6px;
     height: fit-content;
     color: #FF5F1F;
     padding: 4px;

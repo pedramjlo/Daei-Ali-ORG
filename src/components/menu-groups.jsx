@@ -1,16 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../menu-groups.css';
 
 const MenuGroups = () => {
-    const [activeIndex, setActiveIndex] = useState(null);
-    const [content, setContent] = useState('');
-
-    const handleClick = (index, newContent, event) => {
-        event.preventDefault();
-        setActiveIndex(index);
-        setContent(newContent);
-    };
-
     const links = [
         { label: 'پیتزا', content: 'Pizza Content' },
         { label: 'برگر', content: 'Burger Content' },
@@ -18,6 +9,15 @@ const MenuGroups = () => {
         { label: 'نوشیدنی', content: 'Drinks Content' },
         { label: 'پیش غذا', content: 'Appetizers Content' }
     ];
+
+    const [activeIndex, setActiveIndex] = useState(0); // Default to "پیتزا"
+    const [content, setContent] = useState(links[0].content); // Default to "پیتزا" content
+
+    const handleClick = (index, newContent, event) => {
+        event.preventDefault();
+        setActiveIndex(index);
+        setContent(newContent);
+    };
 
     return (
         <div>
@@ -42,4 +42,3 @@ const MenuGroups = () => {
 };
 
 export default MenuGroups;
- 
