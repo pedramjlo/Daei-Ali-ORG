@@ -3,7 +3,6 @@ import Header from './header';
 import MenuButton from './menu-btn';
 import MessageButton from './message-btn';
 import BouncingArrow from './bouncing-arrow';
-import ImageSlider from './main-slider';
 import '../home.css';
 
 
@@ -38,9 +37,6 @@ export default function Home() {
             <BouncingArrow />
           </div>
 
-        <div className='image-slider'>
-          <ImageSlider />
-        </div>
 
 
 
