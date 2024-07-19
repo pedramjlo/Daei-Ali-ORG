@@ -1,14 +1,32 @@
 /* Card.css */
 .card {
     border: 1px solid #ddd;
-    margin: 10px 27px;
-    padding: 10px;
+    margin: 10px 23px;
+    padding: 5px;
     transition: all 0.3s ease;
 }
 
 .card-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
     font-weight: bold;
     cursor: pointer;
+}
+
+.card-title {
+    flex: 1;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-price {
+    flex: 1;
+    text-align: left;
+    color: black;
 }
 
 .card-content {

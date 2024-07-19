@@ -1,7 +1,8 @@
+// Card.js
 import React, { useState } from 'react';
 import '../card.css'; 
 
-const Card = ({ title, children }) => {
+const Card = ({ title, price, children }) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const handleExpandClick = () => {
@@ -11,7 +12,8 @@ const Card = ({ title, children }) => {
     return (
         <div className={`card ${isExpanded ? 'expanded' : ''}`}>
             <div className="card-header" onClick={handleExpandClick}>
-                {title}
+                <div className="card-title">{title}</div>
+                <div className="card-price">{price}</div>
             </div>
             {isExpanded && <div className="card-content">{children}</div>}
         </div>
