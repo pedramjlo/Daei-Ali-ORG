@@ -27,6 +27,7 @@ h2 {
 
 
 .welcome-text {
+    margin-right: 7%;
     font-weight: 700;
     margin-top: 10%;
     margin-left: 6%;
@@ -34,15 +35,11 @@ h2 {
 
 
 .description-1{
-    margin-left: 7%;
+    margin-right: 7%;
+    margin-left: 5%;
     margin-top: 0;
 }
 
-.description-2 {
-    margin-left: 23%;
-    margin-top: -4.5%;
-
-}
 
 
 .description-1 p {
@@ -50,8 +47,11 @@ h2 {
     font-size: 1.2em;
 }
 
-.description-2 p {
 
+
+#branch2{
+    position: relative;
+    bottom: 15px;
 }
 
 .home-illust {

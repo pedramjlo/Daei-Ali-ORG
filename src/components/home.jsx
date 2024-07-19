@@ -16,10 +16,7 @@ export default function Home() {
 
         <div className='description-1'>
           <p>منوی رستوران را آنلاین مشاهده کنید و انتقادات و  پیشنهادات با ارزش خود را برای بهتر شدن ما با ما در میان بگذارید.  </p>
-        </div>
-
-        <div className='description-2'>
-          <p>شعبه سابق دایی علی (کتلت دایی علی) بحرالعلوم ۱۳*</p>
+          <p id='branch2'>شعبه سابق دایی علی (کتلت دایی علی) بحرالعلوم ۱۳*</p>
         </div>
 
         <div className='home-illust'>

@@ -10,6 +10,7 @@ export default function MenuButton(){
 
     const MenuButtonStyle = {
         color: "FF0000",
+        borderRadius: "20px",
     }
     
 

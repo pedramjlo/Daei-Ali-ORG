@@ -7,6 +7,10 @@ import '../buttons.css';
 
 export default function MessageButton(){
     
+    const MessageButtonStyle = {
+        color: "black",
+        borderRadius: "20px",
+    }
 
     const iconStyle = {
         color: "black", 
@@ -14,7 +18,7 @@ export default function MessageButton(){
     };
 
     return (
-        <button className="menu-button"> 
+        <button className="menu-button" style={MessageButtonStyle}> 
 
         <span>
         ثبت پیام
