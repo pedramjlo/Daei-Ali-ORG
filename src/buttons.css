@@ -1,10 +1,9 @@
 button > span {
-    display: inline-block;
     margin: 5px;
     text-align: center;
     align-content: center;
-    width: 8em;
-    height: fit-content;
     color: black;
     font-weight: bold;
+    width: 7rem;
 }
+

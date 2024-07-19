@@ -30,9 +30,9 @@ export default function Home() {
         </div>
 
 
-          <div className='bounce'>
-            <BouncingArrow />
-          </div>
+        <div className='bounce'>
+            <BouncingArrow loading="lazy" />
+        </div> 
 
 
 
