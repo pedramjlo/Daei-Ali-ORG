@@ -18,7 +18,7 @@ h2 {
     justify-content: center;
 }
 
-.welcome-text, .description-1, .description-2 {
+.welcome-text, .description-1{
     direction: rtl;
     line-break: pre;
     margin-right: 5%;
@@ -28,7 +28,8 @@ h2 {
 
 .welcome-text {
     margin-right: 7%;
-    font-weight: 700;
+    font-weight: 900;
+    letter-spacing: 0.8px;
     margin-top: 10%;
     margin-left: 6%;
 }
@@ -66,7 +67,7 @@ h2 {
 
 .buttons-container {
     position: relative;
-    top: 10px;
+    top: 15px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -90,6 +91,7 @@ h2 {
   
 
 .menu-groups-container {
+    margin-bottom: 40px;
     margin-right: 5%;
     margin-left: 5%;
 }
