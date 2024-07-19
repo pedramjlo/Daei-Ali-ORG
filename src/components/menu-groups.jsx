@@ -3,9 +3,9 @@ import '../menu-groups.css';
 
 import PizzaContent from './pizzapage';
 import BurgerContent from './burgerpage';
-import MiniPizzaContent from './minipizza';
-import DrinksContent from './drinks';
-import StartersContent from './starters'
+import MiniPizzaContent from './minipage';
+import DrinksContent from './drinkspage';
+import StartersContent from './starterspage';
 
 const MenuGroups = () => {
     const links = [
@@ -16,7 +16,7 @@ const MenuGroups = () => {
         { label: 'پیش غذا', component: StartersContent }
     ];
 
-    const [activeIndex, setActiveIndex] = useState(0); // default to "pizza"
+    const [activeIndex, setActiveIndex] = useState(0); // Default to "پیتزا"
 
     const handleClick = (index, event) => {
         event.preventDefault();
