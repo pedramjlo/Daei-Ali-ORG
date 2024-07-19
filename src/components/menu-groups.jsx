@@ -1,23 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../menu-groups.css';
+
+import PizzaContent from './pizzapage';
+import BurgerContent from './burgerpage';
+import MiniPizzaContent from './minipizza';
+import DrinksContent from './drinks';
+import StartersContent from './starters'
 
 const MenuGroups = () => {
     const links = [
-        { label: 'پیتزا', content: 'Pizza Content' },
-        { label: 'برگر', content: 'Burger Content' },
-        { label: 'مینی پیتزا', content: 'Mini Pizza Content' },
-        { label: 'نوشیدنی', content: 'Drinks Content' },
-        { label: 'پیش غذا', content: 'Appetizers Content' }
+        { label: 'پیتزا', component: PizzaContent },
+        { label: 'برگر', component: BurgerContent },
+        { label: 'مینی پیتزا', component: MiniPizzaContent },
+        { label: 'نوشیدنی', component: DrinksContent },
+        { label: 'پیش غذا', component: StartersContent }
     ];
 
-    const [activeIndex, setActiveIndex] = useState(0); // Default to "پیتزا"
-    const [content, setContent] = useState(links[0].content); // Default to "پیتزا" content
+    const [activeIndex, setActiveIndex] = useState(0); // default to "pizza"
 
-    const handleClick = (index, newContent, event) => {
+    const handleClick = (index, event) => {
         event.preventDefault();
         setActiveIndex(index);
-        setContent(newContent);
     };
+
+    const ActiveComponent = links[activeIndex].component;
 
     return (
         <div>
@@ -26,7 +32,7 @@ const MenuGroups = () => {
                     <li key={index}>
                         <a 
                             href="#" 
-                            onClick={(event) => handleClick(index, link.content, event)} 
+                            onClick={(event) => handleClick(index, event)} 
                             className={activeIndex === index ? 'active' : ''}
                         >
                             {link.label}
@@ -35,7 +41,7 @@ const MenuGroups = () => {
                 ))}
             </ul>
             <div className='content'>
-                {content}
+                <ActiveComponent />
             </div>
         </div>
     );
