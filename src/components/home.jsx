@@ -1,8 +1,11 @@
 import React from 'react';
+
 import Header from './header';
 import MenuButton from './menu-btn';
 import MessageButton from './message-btn';
 import BouncingArrow from './bouncing-arrow';
+import MenuGroups from './menu-groups';
+
 import '../home.css';
 
 
@@ -33,6 +36,11 @@ export default function Home() {
         <div className='bounce'>
             <BouncingArrow loading="lazy" />
         </div> 
+
+
+        <div className='menu-groups'>
+          <MenuGroups loading="lazy" />
+        </div>
 
 
 
