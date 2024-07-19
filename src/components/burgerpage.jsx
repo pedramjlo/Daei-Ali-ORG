@@ -1,11 +1,20 @@
 import React from 'react';
+import Card from './card';
 
 
 
 const BurgerContent = () => {
     return(
         <div>
-            <h1>burger</h1>
+            <Card title="Margherita Pizza">
+                <p>Details about Margherita Pizza</p>
+            </Card>
+            <Card title="Pepperoni Pizza">
+                <p>Details about Pepperoni Pizza</p>
+            </Card>
+            <Card title="Veggie Pizza">
+                <p>Details about Veggie Pizza</p>
+            </Card>
         </div>
     );
 }

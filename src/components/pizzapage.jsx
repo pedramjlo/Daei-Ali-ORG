@@ -5,13 +5,13 @@ import Card from './card';
 const PizzaContent = () => {
     return (
         <div>
-            <Card title="Margherita Pizza">
+            <Card title="پپرونی">
                 <p>Details about Margherita Pizza</p>
             </Card>
-            <Card title="Pepperoni Pizza">
+            <Card title="ژامبون">
                 <p>Details about Pepperoni Pizza</p>
             </Card>
-            <Card title="Veggie Pizza">
+            <Card title="چیکن پستو">
                 <p>Details about Veggie Pizza</p>
             </Card>
         </div>

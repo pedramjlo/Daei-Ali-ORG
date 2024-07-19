@@ -1,7 +1,7 @@
 /* Card.css */
 .card {
     border: 1px solid #ddd;
-    margin: 10px 0;
+    margin: 10px 27px;
     padding: 10px;
     transition: all 0.3s ease;
 }
