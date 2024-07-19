@@ -1,6 +1,8 @@
 ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 ul li {
@@ -9,5 +11,10 @@ ul li {
 
 
 .menu-list {
-    display: inline-block;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding-right: 5%;
+    padding-left: 5%;
+
 }
