@@ -9,8 +9,8 @@
 }
 
 body {
-    background-color: #FF5F1F;
-    margin: 0;
+  background-color: #FF5F1F;
+  margin: 0;
 }
 
 
@@ -43,10 +43,14 @@ button {
   left: 3vh;
 }
 
-.zoodex-header {
+.zoodex {
   position: absolute;
   top: 1.7vh;
   right: 4vh;
+}
+
+.zoodex img {
+  height: 1.5rem;
 }
 
 
