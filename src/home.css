@@ -57,7 +57,7 @@ h2 {
 
 .home-illust {
     position: relative;
-    bottom: 10px;
+    bottom: 25px;
     margin-left: 20%;
     min-height: 5rem;
     min-width: 3rem;
@@ -67,7 +67,7 @@ h2 {
 
 .buttons-container {
     position: relative;
-    top: 15px;
+    bottom: 15px;
     display: flex;
     flex-direction: column;
     gap: 10px;
