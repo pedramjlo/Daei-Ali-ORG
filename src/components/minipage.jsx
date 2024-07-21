@@ -1,20 +1,24 @@
 import React from 'react';
 import Card from './card';
+import '../card.css';
 
 
 const MiniPizzaContent = () => {
     return(
         <div>
-            <Card title="پپرونی" price="270t">
+            <Card title="پپرونی" price="130t">
             </Card>
 
-            <Card title="ژامبون" price="347t">
+            <Card title="ژامبون" price="145t">
             </Card>
 
-            <Card title="چیکن پستو" price="299t">
+            <Card title=" مینس میت" price="195t">
             </Card>
 
-            <Card title="چیکن باربیکیو" price="289t">
+            <Card title="چیکن" price="150t">
+            </Card>
+
+            <Card title="مارگاریتا" price="90t">
         </Card>
         </div>
     );

@@ -3,37 +3,24 @@
     border: 0.3px solid #ddd;
     margin: 10px 23px;
     padding: 5px;
-    transition: all 0.3s ease;
-    background-color: #FF5F1F;
+    background-color: #FF5F1F; /* Default background color */
+    transition: padding 0.3s ease; /* Smooth transition for padding */
 }
-
-/* Existing styles */
 
 .card-header {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* Title on right, price on left */
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding: 15px;
-}
-
-/* Animation styles */
-.card.animated .card-header {
-    animation: pulse 0.5s forwards; /* 'forwards' keeps the final state */
-}
-
-@keyframes pulse {
-    50% {
-        transform: scale(0.8);
-    }
-    45% {
-        transform: scale(1);
-    }
 }
 
 .card-title, .card-price {
-    color: white;
+    color: white; 
+}
+
+.card.expanded .card-header {
+    padding: 10px; 
 }
 
 .card-title {
@@ -59,10 +46,5 @@
 }
 
 .card.expanded {
-    background-color: #FF5F1F;
-    padding: 10px;
-}
-
-.card.expanded .card-title, .card.expanded .card-price {
-    color: white;
+    padding: 15px; /* Ensure padding changes only affect the overall card */
 }

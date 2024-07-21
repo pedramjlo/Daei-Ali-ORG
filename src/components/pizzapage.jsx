@@ -1,6 +1,7 @@
 // PizzaContent.js
 import React from 'react';
 import Card from './card';
+import '../card.css';
 
 const PizzaContent = () => {
     return (
