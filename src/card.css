@@ -45,9 +45,11 @@
     padding-top: 3%;
     margin-left: 3%;
     margin-right: 3%;
+    min-height: auto;
 }
 
 .card.expanded {
     padding: 15px; /* Ensure padding changes only affect the overall card */
+    min-height: auto;
 }
 

@@ -21,24 +21,23 @@ h2 {
 .welcome-text, .description-1{
     direction: rtl;
     line-break: pre;
-    margin-right: 5%;
+    margin-right: 7%;
+    margin-left: 6%;
 }
 
 
 
 .welcome-text {
-    margin-right: 7%;
     font-weight: 900;
     letter-spacing: 0.8px;
     margin-top: 15%;
-    margin-left: 6%;
 }
 
 
 .description-1{
-    margin-right: 7%;
     margin-left: 5%;
-    margin-top: 12%;
+    line-height: normal;
+    min-height: auto;
 }
 
 
@@ -59,8 +58,13 @@ h2 {
     position: relative;
     bottom: 25px;
     margin-left: 20%;
-    min-height: 5rem;
-    min-width: 3rem;
+    max-height: 15rem;
+    max-width: 3rem;
+}
+
+.home-illust img {
+    max-width: auto;
+    max-height: auto;
 }
 
 
@@ -70,7 +74,7 @@ h2 {
     bottom: 15px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
 }

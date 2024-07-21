@@ -1,9 +1,13 @@
+button {
+    border: 0.5px solid white;
+}
+
 button > span {
     margin: 5px;
     text-align: center;
     align-content: center;
     color: black;
-    font-weight: bold;
-    width: 7rem;
+    font-weight: bold; 
+    width: 10rem;
 }
 

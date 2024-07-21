@@ -5,6 +5,8 @@ import MenuButton from './menu-btn';
 import MessageButton from './message-btn';
 import BouncingArrow from './bouncing-arrow';
 import MenuGroups from './menu-groups';
+import HomeImages from './home-images';
+import Footer from './footer';
 
 import '../home.css';
 
@@ -49,12 +51,13 @@ export default function Home() {
           </div>
        </section>
 
-
-
-
+       <section>
+          <HomeImages />
+       </section>
 
 
       </div>
+      <Footer />
     </div>
   );
 }
