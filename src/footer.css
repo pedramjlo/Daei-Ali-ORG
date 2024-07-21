@@ -1,0 +1,25 @@
+footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #63666A;
+    min-height: 7rem;
+    max-width: 100%;
+    text-align: center;
+    padding: 20px 3%;
+    margin: 0;
+    gap: 15px;
+}
+
+footer span {
+    margin-top: -5px;
+    font-weight: 800;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+

@@ -3,13 +3,13 @@
     border: 0.3px solid #ddd;
     margin: 10px 23px;
     padding: 8px;
-    background-color: #FF5F1F; /* Default background color */
-    transition: padding 0.3s ease; /* Smooth transition for padding */
+    background-color: #FF5F1F; 
+    transition: padding 0.3s ease; 
 }
 
 .card-header {
     display: flex;
-    flex-direction: row-reverse; /* Title on right, price on left */
+    flex-direction: row-reverse; 
     justify-content: space-between;
     align-items: center;
     cursor: pointer;

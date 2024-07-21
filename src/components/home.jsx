@@ -55,9 +55,10 @@ export default function Home() {
           <HomeImages />
        </section>
 
+       <Footer />
 
       </div>
-      <Footer />
+      
     </div>
   );
 }
