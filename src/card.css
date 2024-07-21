@@ -2,7 +2,7 @@
 .card {
     border: 0.3px solid #ddd;
     margin: 10px 23px;
-    padding: 5px;
+    padding: 8px;
     background-color: #FF5F1F; /* Default background color */
     transition: padding 0.3s ease; /* Smooth transition for padding */
 }
@@ -42,7 +42,7 @@
 .card-content {
     text-align: center;
     padding-top: 10px;
-    padding-bottom: 1px;
+    padding-top: 8px;
 }
 
 .card.expanded {
