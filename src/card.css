@@ -1,4 +1,4 @@
-
+/* card.css */
 .card {
     border: 0.3px solid #ddd;
     margin: 10px 23px;
@@ -7,13 +7,29 @@
     background-color: #FF5F1F;
 }
 
+/* Existing styles */
+
 .card-header {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding: 10px;
+    padding: 15px;
+}
+
+/* Animation styles */
+.card.animated .card-header {
+    animation: pulse 0.5s forwards; /* 'forwards' keeps the final state */
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(0.8);
+    }
+    45% {
+        transform: scale(1);
+    }
 }
 
 .card-title, .card-price {
