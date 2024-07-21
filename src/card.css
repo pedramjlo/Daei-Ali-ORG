@@ -13,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    padding: 10px;
 }
 
 .card-title, .card-price {
@@ -43,7 +44,7 @@
 
 .card.expanded {
     background-color: #FF5F1F;
-    padding: 12px;
+    padding: 10px;
 }
 
 .card.expanded .card-title, .card.expanded .card-price {

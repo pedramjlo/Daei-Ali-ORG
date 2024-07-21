@@ -15,7 +15,7 @@ const Card = ({ title, price, children }) => {
                 <div className="card-title">{title}</div>
                 <div className="card-price">{price}</div>
             </div>
-            {isExpanded && <div className="card-content">{children}</div>}
+            {isExpanded && <div style={{direction:"rtl"}} className="card-content">{children}</div>}
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../menu-groups.css';
+import Card from './card';
 
 import PizzaContent from './pizzapage';
 import BurgerContent from './burgerpage';
