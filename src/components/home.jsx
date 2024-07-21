@@ -13,7 +13,7 @@ import '../home.css';
 
 export default function Home() {
   const menuGroupsRef = useRef(null);
-  const scrollOffset = -30; // Adjust this value to set how much you want to scroll upwards
+  const scrollOffset = -30; // scroll upwards, the higher the number, the higher the viewport
 
   const scrollToMenuGroups = () => {
     if (menuGroupsRef.current) {
