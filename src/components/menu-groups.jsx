@@ -10,8 +10,8 @@ import StartersContent from './starterspage';
 
 const MenuGroups = () => {
     const links = [
-        { label: 'پیتزا', component: PizzaContent },
         { label: 'برگر', component: BurgerContent },
+        { label: 'پیتزا', component: PizzaContent },
         { label: 'مینی پیتزا', component: MiniPizzaContent },
         { label: 'نوشیدنی', component: DrinksContent },
         { label: 'پیش غذا', component: StartersContent }

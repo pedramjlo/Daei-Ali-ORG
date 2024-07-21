@@ -5,10 +5,10 @@ import '../card.css';
 const DrinksContent = () => {
     return (
        <div>
-             <Card title="اسپرایت" price="25">
+             <Card title="اسپرایت" price="25t">
             </Card>
 
-            <Card title="آب معدنی" price="25">
+            <Card title="آب معدنی" price="25t">
             </Card>
 
             <Card title="کوکا کولا" price="25t">
@@ -20,10 +20,10 @@ const DrinksContent = () => {
             <Card title="دلستر" price="25t">
             </Card>
 
-            <Card title="فانتا" price="289t">
+            <Card title="فانتا" price="25t">
             </Card>
 
-            <Card title="Cold Brew" price="289t">
+            <Card title="Cold Brew" price="40t">
             </Card>
        </div>
     );

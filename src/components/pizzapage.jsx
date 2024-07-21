@@ -6,8 +6,10 @@ import '../card.css';
 const PizzaContent = () => {
     return (
         <div>
-            <Card title="پپرونی" price="270t">
+            <Card title="چیکن باربیکیو" price="289t">
             </Card>
+
+            
 
             <Card title="ژامبون" price="347t">
             </Card>
@@ -15,8 +17,6 @@ const PizzaContent = () => {
             <Card title="چیکن پستو" price="299t">
             </Card>
 
-            <Card title="چیکن باربیکیو" price="289t">
-            </Card>
 
             <Card title="سیر استیک" price="...">
             </Card>
@@ -31,6 +31,9 @@ const PizzaContent = () => {
             </Card>
 
             <Card title="رست بیف" price="477t">
+            </Card>
+
+            <Card title="پپرونی" price="270t">
             </Card>
         </div>
     );
