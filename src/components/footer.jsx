@@ -6,7 +6,6 @@ import { IoCallOutline } from "react-icons/io5";
 import { LuMapPin } from "react-icons/lu";
 
 
-import { color } from 'framer-motion';
 
 
 
