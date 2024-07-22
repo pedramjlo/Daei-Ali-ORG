@@ -38,13 +38,13 @@ button {
 
 .logo-header {
   position: absolute;
-  left: 25px;
+  right: 26px;
 }
 
 
 .zoodex {
   position: absolute;
-  right: 26px;
+  left: 25px;
 }
 
 .zoodex img {
