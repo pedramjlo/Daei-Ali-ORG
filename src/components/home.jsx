@@ -65,7 +65,7 @@ export default function Home() {
         </div>
 
         <div className='image-container'>
-          <HomeImages />
+          <HomeImages loading="lazy" />
         </div>
 
         <Footer ref={footerRef} />

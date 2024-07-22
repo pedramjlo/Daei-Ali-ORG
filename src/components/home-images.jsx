@@ -23,9 +23,9 @@ const HomeImages = () => {
 
     return (
         <div className='home-images' style={imageContainer}>
-            <img class="img-fluid" src="./shop.jpg" alt="restaurant views" style={imageStyle} />
-            <img class="img-fluid" src="./burger.jpg" alt="holding burger" style={imageStyle} />
-            <img class="img-fluid" src="./pizza.jpg" alt="daei ali pizza" style={imageStyle} />
+            <img class="img-fluid" src="./restaurant.webp" alt="restaurant views" style={imageStyle} />
+            <img class="img-fluid" src="./burger.webp" alt="holding burger" style={imageStyle} />
+            <img class="img-fluid" src="./pizza.webp" alt="daei ali pizza" style={imageStyle} />
         </div>
     );
 }
