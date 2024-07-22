@@ -15,6 +15,9 @@ body {
 
 
 header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   position: absolute;
   top: 0;
   background-color: white;
@@ -35,14 +38,13 @@ button {
 
 .logo-header {
   position: absolute;
-  top: 1.7vh;
-  left: 3vh;
+  left: 25px;
 }
+
 
 .zoodex {
   position: absolute;
-  top: 1.7vh;
-  right: 27px;
+  right: 26px;
 }
 
 .zoodex img {
