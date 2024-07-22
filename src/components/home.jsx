@@ -36,11 +36,11 @@ export default function Home() {
       <div className='home-container'>
 
         <section className='section1'>
-          <h2 className='welcome-text'>به دایی علی (شعبه جدید) خوش آمدید</h2>
+          <h1 className='welcome-text'>به دایی علی (شعبه جدید) خوش آمدید</h1>
 
-          <div className='description-1'>
-            <p>منوی رستوران را آنلاین مشاهده کنید و انتقادات و پیشنهادات با ارزش خود را برای بهتر شدن ما با ما در میان بگذارید.</p>
-            <p id='branch2'>شعبه سابق دایی علی (کتلت دایی علی) بحرالعلوم ۱۳*</p>
+          <div className='description'>
+            <span id='text1'>منوی رستوران را آنلاین مشاهده کنید و انتقادات و پیشنهادات با ارزش خود را برای بهتر شدن ما با ما در میان بگذارید.</span>
+            <span id='branch2'>شعبه سابق دایی علی (کتلت دایی علی) بحرالعلوم ۱۳*</span>
           </div>
 
           <div className='home-illust'>
@@ -54,7 +54,7 @@ export default function Home() {
         </section>
 
 
-          <div className='menu-groups' style={{ marginTop: "50px" }} ref={menuGroupsRef}>
+          <div className='menu-groups' style={{ marginTop: "50%" }} ref={menuGroupsRef}>
             <MenuGroups loading="lazy" />
           </div>
 

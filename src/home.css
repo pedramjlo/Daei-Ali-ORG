@@ -18,9 +18,8 @@ h2 {
     justify-content: center;
 }
 
-.welcome-text, .description-1{
+.welcome-text, .description{
     direction: rtl;
-    line-break: pre;
     margin-right: 7%;
     margin-left: 6%;
 }
@@ -34,29 +33,35 @@ h2 {
 }
 
 
-.description-1{
+.description{
+    word-wrap: break-word;
+    word-break: break-word;
+    margin-top: 5%;
     margin-left: 5%;
-    line-height: normal;
-    min-height: auto;
 }
 
 
 
-.description-1 p {
+.description span {
     letter-spacing: -0.2px;
     font-size: 1.2em;
 }
 
+#text1 {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 500;
+}
 
 
 #branch2{
-    position: relative;
-    bottom: 15px;
+    display: block;
+    padding-top: 12px;
 }
 
 .home-illust {
     position: relative;
-    bottom: 25px;
+    top: 50px;
     margin-left: 20%;
     max-height: 15rem;
     max-width: 3rem;
@@ -71,7 +76,7 @@ h2 {
 
 .buttons-container {
     position: relative;
-    bottom: 15px;
+    top: 80px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -81,8 +86,6 @@ h2 {
   
 
 .menu-groups-container {
-    position: relative;
-    top: 50px;
     padding-bottom: 15px;
     margin-right: 5%;
     margin-left: 5%;
@@ -94,7 +97,7 @@ h2 {
 
     .welcome-text {
         position: relative;
-        bottom: 10%;
+        bottom: 20%;
         font-weight: 900;
         letter-spacing: 0.8px;
     }
