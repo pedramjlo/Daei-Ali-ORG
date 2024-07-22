@@ -9,9 +9,6 @@ export default function MessageButton(){
     
     const MessageButtonStyle = {
         color: "black",
-        borderRadius: "20px",
-        width: "10rem",
-        height: "2rem",
     }
 
     const iconStyle = {

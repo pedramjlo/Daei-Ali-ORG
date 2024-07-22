@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 
 import Header from './header';
+import ContactButton from './contact';
 import MenuButton from './menu-btn';
 import MessageButton from './message-btn';
 import MenuGroups from './menu-groups';
@@ -50,6 +51,7 @@ export default function Home() {
           <div className='buttons-container'> 
             <MenuButton onClick={scrollToMenuGroups} />
             <MessageButton />
+            <ContactButton />
           </div>
         </section>
 

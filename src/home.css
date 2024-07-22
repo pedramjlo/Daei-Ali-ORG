@@ -24,8 +24,7 @@ h2 {
     margin-left: 6%;
 }
 
-
-
+ 
 .welcome-text {
     font-weight: 900;
     letter-spacing: 0.8px;
@@ -96,8 +95,7 @@ h2 {
 @media only screen and (min-width: 992px) {
 
     .welcome-text {
-        position: relative;
-        bottom: 20%;
+        margin-top: 8%;
         font-weight: 900;
         letter-spacing: 0.8px;
     }
@@ -109,8 +107,17 @@ h2 {
         min-height: auto;
     }
 
-    .image-container {
+
+
+    .buttons-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .menu-groups-container {
+        margin-right: 5%;
+        margin-left: 15%;
     }
 }
