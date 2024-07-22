@@ -11,23 +11,29 @@ import Footer from './footer';
 
 import '../home.css';
 
-
-
-
 export default function Home() {
   const menuGroupsRef = useRef(null);
-  const scrollOffset = -30; // scroll upwards. the higher the number, the higher the viewport
+  const footerRef = useRef(null);
+  const scrollOffset = -30; 
 
   const scrollToMenuGroups = () => {
     if (menuGroupsRef.current) {
-      console.log('Scrolling to menu groups');
       scroll.scrollTo(menuGroupsRef.current.offsetTop + scrollOffset, {
         duration: 800,
         delay: 0,
         smooth: 'easeInOutQuart'
       });
-    } else {
-      console.log('menuGroupsRef is null');
+    }
+  };
+
+  const scrollToFooter = () => {
+    if (footerRef.current) {
+      console.log('Scrolling to footer:', footerRef.current.offsetTop);
+      scroll.scrollTo(footerRef.current.offsetTop + scrollOffset, {
+        duration: 800,
+        delay: 0,
+        smooth: 'easeInOutQuart'
+      });
     }
   };
 
@@ -35,7 +41,6 @@ export default function Home() {
     <div>
       <Header />
       <div className='home-container'>
-
         <section className='section1'>
           <h1 className='welcome-text'>به دایی علی (شعبه جدید) خوش آمدید</h1>
 
@@ -51,21 +56,19 @@ export default function Home() {
           <div className='buttons-container'> 
             <MenuButton onClick={scrollToMenuGroups} />
             <MessageButton />
-            <ContactButton />
+            <ContactButton onClick={scrollToFooter} />
           </div>
         </section>
 
-
-          <div className='menu-groups' style={{ marginTop: "50%" }} ref={menuGroupsRef}>
-            <MenuGroups loading="lazy" />
-          </div>
-
+        <div className='menu-groups' style={{ marginTop: "50%" }} ref={menuGroupsRef}>
+          <MenuGroups loading="lazy" />
+        </div>
 
         <div className='image-container'>
           <HomeImages />
         </div>
 
-        <Footer />
+        <Footer ref={footerRef} />
       </div>
     </div>
   );

@@ -61,7 +61,7 @@ h2 {
 .home-illust {
     position: relative;
     top: 50px;
-    margin-left: 20%;
+    margin-left: 18%;
     max-height: 15rem;
     max-width: 3rem;
 }
@@ -84,10 +84,11 @@ h2 {
 }
   
 
-.menu-groups-container {
+.menu-groups {
+    margin-top: 10%;
     padding-bottom: 15px;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
 
