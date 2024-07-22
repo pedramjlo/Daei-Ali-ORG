@@ -96,6 +96,7 @@ h2 {
 @media only screen and (min-width: 992px) {
 
     .welcome-text {
+        min-width: 50%;
         margin-top: 8%;
         font-weight: 900;
         letter-spacing: 0.8px;
@@ -104,26 +105,48 @@ h2 {
     
     
     .description-1{
-        margin-left: 5%;
         line-height: normal;
         min-height: auto;
     }
 
+    .home-illust {
+        margin-top: 5%;
+        margin-left: 2px;
+        position: absolute;
+        left: 10%;
+        bottom: 20%;
+        min-width: 30%;
+    }
 
+    .home-illust img {
+        min-width: 15rem;
+        max-height: 15rem;
+    }
+
+    #text1 {
+        width: 50%;
+    }
+
+    #branch2 {
+        width: 50%;
+    }
 
     .buttons-container {
         display: flex;
         flex-direction: row-reverse;
         position: relative;
-        bottom: 10px;
-    }
-
-    .menu-groups-container {
-        margin-right: 5%;
-        margin-left: 15%;
+        margin-top: 5%;
+        bottom: 20px;
+        gap: 12%;
     }
 
     .menu-groups {
-        margin-top: 10%;
+        margin-top: 20%;
+        margin-right: 2.5%;
+        margin-left: 3%;
+    }
+
+    .menu-groups {
+        margin-top: 18%;
     }
 }
