@@ -4,16 +4,18 @@ import { animateScroll as scroll } from 'react-scroll';
 import Header from './header';
 import MenuButton from './menu-btn';
 import MessageButton from './message-btn';
-import BouncingArrow from './bouncing-arrow';
 import MenuGroups from './menu-groups';
 import HomeImages from './home-images';
 import Footer from './footer';
 
 import '../home.css';
 
+
+
+
 export default function Home() {
   const menuGroupsRef = useRef(null);
-  const scrollOffset = -30; // scroll upwards, the higher the number, the higher the viewport
+  const scrollOffset = -30; // scroll upwards. the higher the number, the higher the viewport
 
   const scrollToMenuGroups = () => {
     if (menuGroupsRef.current) {
@@ -51,19 +53,15 @@ export default function Home() {
           </div>
         </section>
 
-        <div className='bounce'>
-          <BouncingArrow loading="lazy" />
-        </div> 
 
-        <section className='section2' ref={menuGroupsRef}>
-          <div className='menu-groups'>
+          <div className='menu-groups' style={{ marginTop: "50px" }} ref={menuGroupsRef}>
             <MenuGroups loading="lazy" />
           </div>
-        </section>
 
-        <section>
+
+        <div className='image-container'>
           <HomeImages />
-        </section>
+        </div>
 
         <Footer />
       </div>

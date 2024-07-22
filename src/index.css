@@ -32,11 +32,6 @@ button {
   border-radius: 5px;
 }
 
-.zoodex-header img {
-  height: 2em;
-  width: 3em;
-}
-
 
 .logo-header {
   position: absolute;
@@ -63,8 +58,28 @@ button {
 }
 
 
-@media only screen and (min-width: 480px){
-  header {
-    min-height: 3.8em;
+@media only screen and (min-width: 992px){
+  .logo-header img{
+    width: 2em;
+    height: 2em;
+    border-radius: 5px;
   }
+  
+  
+  .logo-header {
+    position: absolute;
+    top: 1.7vh;
+    left: 5%;
+  }
+
+  .zoodex {
+    position: absolute;
+    top: 1.7vh;
+    right: 6%;
+  }
+
+  .zoodex img {
+  height: 1.5rem;
+}
+
 }

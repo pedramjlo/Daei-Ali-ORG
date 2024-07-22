@@ -9,7 +9,7 @@ const HomeImages = () => {
         display: "flex",
         flexDirection: "column",
         minWidth: "100%",
-        minHeight: "5vh",
+        maxHeight: "100%",
         paddingTop: "5px",
         paddingBottom: "20px",
     };
@@ -23,9 +23,9 @@ const HomeImages = () => {
 
     return (
         <div className='home-images' style={imageContainer}>
-            <img class="img-fluid" src="./mmreza.jpg" alt="mmreza holding burger" style={imageStyle} />
-            <img class="img-fluid" src="./shop.jpg" alt="mmreza holding burger" style={imageStyle} />
-            <img class="img-fluid" src="./pizza.jpg" alt="mmreza holding burger" style={imageStyle} />
+            <img class="img-fluid" src="./shop.jpg" alt="restaurant views" style={imageStyle} />
+            <img class="img-fluid" src="./burger.jpg" alt="holding burger" style={imageStyle} />
+            <img class="img-fluid" src="./pizza.jpg" alt="daei ali pizza" style={imageStyle} />
         </div>
     );
 }

@@ -78,26 +78,36 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-
-
-
-
-.bounce{
-    margin-right: 48%;
-    margin-top: 15%;
-    transform: scale(-1, -1);
-}
-
-
-.extra img {
-    width: 100%;
-}
   
 
 .menu-groups-container {
-    padding-bottom: 50px;
+    position: relative;
+    top: 50px;
+    padding-bottom: 15px;
     margin-right: 5%;
     margin-left: 5%;
 }
 
 
+
+@media only screen and (min-width: 992px) {
+
+    .welcome-text {
+        position: relative;
+        bottom: 10%;
+        font-weight: 900;
+        letter-spacing: 0.8px;
+    }
+    
+    
+    .description-1{
+        margin-left: 5%;
+        line-height: normal;
+        min-height: auto;
+    }
+
+    .image-container {
+        display: flex;
+        flex-direction: row;
+    }
+}

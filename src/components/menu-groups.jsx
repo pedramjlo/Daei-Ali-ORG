@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import '../menu-groups.css';
-import Card from './card';
+
 
 import PizzaContent from './pizzapage';
 import BurgerContent from './burgerpage';
 import MiniPizzaContent from './minipage';
 import DrinksContent from './drinkspage';
 import StartersContent from './starterspage';
+
 
 const MenuGroups = () => {
     const links = [
