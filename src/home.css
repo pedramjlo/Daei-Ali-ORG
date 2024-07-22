@@ -85,10 +85,10 @@ h2 {
   
 
 .menu-groups {
-    margin-top: 10%;
+    margin-top: 39%;
     padding-bottom: 15px;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 1%;
+    margin-left: 1%;
 }
 
 
@@ -100,6 +100,7 @@ h2 {
         font-weight: 900;
         letter-spacing: 0.8px;
     }
+
     
     
     .description-1{
@@ -120,5 +121,9 @@ h2 {
     .menu-groups-container {
         margin-right: 5%;
         margin-left: 15%;
+    }
+
+    .menu-groups {
+        margin-top: 10%;
     }
 }

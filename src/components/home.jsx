@@ -60,7 +60,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className='menu-groups' style={{ marginTop: "50%" }} ref={menuGroupsRef}>
+        <div className='menu-groups' ref={menuGroupsRef}>
           <MenuGroups loading="lazy" />
         </div>
 

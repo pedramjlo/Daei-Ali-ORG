@@ -61,6 +61,7 @@ button {
 
 
 @media only screen and (min-width: 992px){
+
   .logo-header img{
     width: 2em;
     height: 2em;
@@ -70,14 +71,12 @@ button {
   
   .logo-header {
     position: absolute;
-    top: 1.7vh;
-    left: 5%;
+    right: 6.5%;
   }
 
   .zoodex {
     position: absolute;
-    top: 1.7vh;
-    right: 6%;
+    left: 6.5%;
   }
 
   .zoodex img {
