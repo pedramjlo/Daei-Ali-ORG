@@ -135,7 +135,7 @@ h2 {
         margin-left: 2px;
         position: absolute;
         left: 10%;
-        bottom: 20%;
+        top: 10%;
         min-width: 30%;
     }
 
@@ -163,8 +163,8 @@ h2 {
 
     .menu-groups {
         margin-top: 20%;
-        margin-right: 2.5%;
-        margin-left: 3%;
+        margin-right: 8.6%;
+        margin-left: 8.6%;
     }
 
     .menu-groups {
@@ -183,6 +183,10 @@ h2 {
 
     .middle-img {
         margin-top: 26%; 
+    }
+    
+    footer {
+
     }
 
 
