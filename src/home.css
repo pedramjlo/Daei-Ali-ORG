@@ -169,6 +169,7 @@ h2 {
 
     .menu-groups {
         margin-top: 18%;
+
     }
 
     .home-images {
@@ -185,8 +186,12 @@ h2 {
         margin-top: 26%; 
     }
     
-    footer {
+    footer span{
+        letter-spacing: 2px;
+    }
 
+    .icons-container {
+        gap: 10%;
     }
 
 
