@@ -164,8 +164,13 @@ h2 {
         margin-top: 18%;
     }
 
-    .image-container {
+    .home-images {
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: row-reverse;
     }
+
+      .home-images img {
+        flex: 1;
+        margin: 10px; /* Customizable margin between images */
+      }
 }
