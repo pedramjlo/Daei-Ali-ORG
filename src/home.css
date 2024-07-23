@@ -125,11 +125,13 @@ h2 {
     
     
     .description{
-
         min-height: auto;
-        width: 30rem;
-        margin-left: 47%;
-        
+        width: 25rem;
+        margin-left: 54%;
+    }
+
+    #text1 {
+        line-break: strict;
     }
 
     #branch2 {
