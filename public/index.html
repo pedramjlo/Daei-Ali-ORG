@@ -20,11 +20,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap" rel="stylesheet">
     
 
-    <!-- load the font locally -->
+    <!-- Preload all the images -->
+    <link rel="preload" href="./icons/home-illust.svg" as="image">
+    <link rel="preload" href="./burger.webp" as="image">
+    <link rel="preload" href="./pizza.webp" as="image">
+    <link rel="preload" href="./restaurant.webp" as="image">
      
 
 
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -37,7 +40,7 @@
     <title>دایی علی - Daei Ali</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+      <script src="bundle.js"></script>
     <div id="root"></div>
     <!--
       This HTML file is a template.

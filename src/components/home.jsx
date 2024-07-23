@@ -1,30 +1,28 @@
-import React, { useRef } from 'react';
+import React, { useRef, Suspense, lazy } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import { Container, Row, Col } from 'react-bootstrap';
+import { useInView } from 'react-intersection-observer';
 
 import Header from './header';
 import ContactButton from './contact';
 import MenuButton from './menu-btn';
 import MessageButton from './message-btn';
 import MenuGroups from './menu-groups';
-
-
-import Footer from './footer';
-
 import '../home.css';
 
+const LazyFooter = lazy(() => import('./footer'));
 
 export default function Home() {
   const menuGroupsRef = useRef(null);
   const footerRef = useRef(null);
-  const scrollOffset = -30; 
+  const scrollOffset = -30;
 
   const scrollToMenuGroups = () => {
     if (menuGroupsRef.current) {
       scroll.scrollTo(menuGroupsRef.current.offsetTop + scrollOffset, {
         duration: 800,
         delay: 0,
-        smooth: 'easeInOutQuart'
+        smooth: 'easeInOutQuart',
       });
     }
   };
@@ -35,59 +33,73 @@ export default function Home() {
       scroll.scrollTo(footerRef.current.offsetTop + scrollOffset, {
         duration: 800,
         delay: 0,
-        smooth: 'easeInOutQuart'
+        smooth: 'easeInOutQuart',
       });
     }
   };
 
+  const { ref: footerInViewRef, inView: footerInView } = useInView({
+    triggerOnce: true,
+    rootMargin: '0px 0px',
+  });
+
   return (
     <div>
       <Header />
-      <div className='home-container'>
+      <div className="home-container">
+        <h1 className="welcome-text">به دایی علی (شعبه جدید) خوش آمدید</h1>
 
-          <h1 className='welcome-text'>به دایی علی (شعبه جدید) خوش آمدید</h1>
+        <div className="description">
+          <span id="text1">
+            منوی رستوران را آنلاین مشاهده کنید و انتقادات و پیشنهادات با ارزش
+            خود را برای بهتر شدن ما با ما در میان بگذارید.
+          </span>
+          <span id="branch2">شعبه سابق دایی علی (کتلت دایی علی) بحرالعلوم ۱۳*</span>
+        </div>
 
-          <div className='description'>
-            <span id='text1'>منوی رستوران را آنلاین مشاهده کنید و انتقادات و پیشنهادات با ارزش خود را برای بهتر شدن ما با ما در میان بگذارید.</span>
-            <span id='branch2'>شعبه سابق دایی علی (کتلت دایی علی) بحرالعلوم ۱۳*</span>
-          </div>
+        <div className="home-illust">
+          <img src="./icons/home-illust.svg" alt="phone illustration" />
+        </div>
 
-          <div className='home-illust'>
-            <img src="./icons/home-illust.svg" alt="phone illustration" />
-          </div>
+        <div className="buttons-container">
+          <MenuButton onClick={scrollToMenuGroups} />
+          <MessageButton />
+          <ContactButton onClick={scrollToFooter} />
+        </div>
 
-          <div className='buttons-container'> 
-            <MenuButton onClick={scrollToMenuGroups} />
-            <MessageButton />
-            <ContactButton onClick={scrollToFooter} />
-          </div>
-
-          <Container>
-            <Row>
-              <Col md={4}>
-                <img src="./burger.webp" alt="burger" className="img-fluid custom-img" />
-              </Col>
-              <Col md={4}>
-                <img src="./pizza.webp" alt="pizza" className="img-fluid custom-img middle-img" />
-              </Col>
-              <Col md={4}>
-                <img src="./restaurant.webp" alt="front view" className="img-fluid custom-img" />
-              </Col>
-            </Row>
+        <Container>
+          <Row>
+            <LazyImage src="./burger.webp" alt="burger" className="img-fluid custom-img" />
+            <LazyImage src="./pizza.webp" alt="pizza" className="img-fluid custom-img middle-img" />
+            <LazyImage src="./restaurant.webp" alt="front view" className="img-fluid custom-img" />
+          </Row>
         </Container>
 
-
-
-        <div className='menu-groups' ref={menuGroupsRef}>
+        <div className="menu-groups" ref={menuGroupsRef}>
           <MenuGroups loading="lazy" />
         </div>
 
-        
-
-
-
-        <Footer ref={footerRef} />
+        <div ref={footerInViewRef}>
+          {footerInView && (
+            <Suspense fallback={<div>Loading...</div>}>
+              <LazyFooter ref={footerRef} />
+            </Suspense>
+          )}
+        </div>
       </div>
     </div>
+  );
+}
+
+const LazyImage = ({ src, alt, className }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: '0px 0px',
+  });
+
+  return (
+    <Col md={4} ref={ref}>
+      {inView && <img src={src} alt={alt} className={className} />}
+    </Col>
   );
 };
