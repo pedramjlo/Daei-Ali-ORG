@@ -8,7 +8,6 @@ const Card = ({ title, price, children, isHighlighted, onExpand }) => {
     const handleExpandClick = () => {
         if (children) {
             setIsExpanded(!isExpanded);
-
             if (onExpand) {
                 onExpand();
             }
@@ -16,7 +15,7 @@ const Card = ({ title, price, children, isHighlighted, onExpand }) => {
     };
 
     return (
-        <div className={`card ${isExpanded ? 'expanded' : ''}`}>
+        <div className={`card ${isExpanded ? 'expanded' : ''} ${isHighlighted ? 'highlighted' : ''}`}>
             <div
                 className={`card-header ${isHighlighted ? 'highlighted' : ''}`}
                 onClick={handleExpandClick}

@@ -1,6 +1,6 @@
 .card {
-    border: 0.3px solid #ddd;
-    margin: 10px 23px;
+    border: 1px solid #ddd;
+    margin: 10px 20px;
     padding: 8px;
     background-color: #FF5F1F;
     transition: padding 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
@@ -57,27 +57,46 @@
     font-size: 1.3em; 
     font-weight: 200;
     margin-left: 10px;
-    animation: bounce 2.6s infinite;
+    animation: bounce 2s ease-in-out infinite;
+    position: absolute;
+    right: 44%;
+    top: 50%;
 }
 
-
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+    0%, 100% {
         transform: translateY(0);
     }
-    40% {
-        transform: translateY(-30px);
+    30% {
+        transform: translateY(-10px); /* Move up */
     }
     60% {
-        transform: translateY(-15px);
+        transform: translateY(0px); /* Move back to original position */
+    }
+    70% {
+        transform: translateY(-3px); /* Small bounce */
+    }
+    80% {
+        transform: translateY(0px); /* Return to original position */
+    }
+}
+
+@keyframes wink {
+    0%, 100% {
+        border-color: #ddd;
+    }
+    30%, 60% {
+        border-color: #FF5F1F; /* Change to the color you want to wink with */
+    }
+    70%, 80% {
+        border-color: #ddd; /* Reset to original color */
     }
 }
 
 .card.highlighted {
-    /* Additional styles if needed, such as a border or background change */
+    animation: wink 2s ease-in-out infinite;
 }
 
-/* Hide the bouncing icon when the card is expanded */
 .card.expanded .bouncing-icon {
     display: none;
 }
