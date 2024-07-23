@@ -6,7 +6,7 @@ import ContactButton from './contact';
 import MenuButton from './menu-btn';
 import MessageButton from './message-btn';
 import MenuGroups from './menu-groups';
-import HomeImages from './home-images';
+
 import Footer from './footer';
 
 import '../home.css';
@@ -64,9 +64,7 @@ export default function Home() {
           <MenuGroups loading="lazy" />
         </div>
 
-        <div className='image-container'>
-          <HomeImages loading="lazy" />
-        </div>
+
 
         <Footer ref={footerRef} />
       </div>
