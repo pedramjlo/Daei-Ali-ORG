@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import Header from './header';
 import ContactButton from './contact';
@@ -7,9 +8,11 @@ import MenuButton from './menu-btn';
 import MessageButton from './message-btn';
 import MenuGroups from './menu-groups';
 
+
 import Footer from './footer';
 
 import '../home.css';
+
 
 export default function Home() {
   const menuGroupsRef = useRef(null);
@@ -41,7 +44,7 @@ export default function Home() {
     <div>
       <Header />
       <div className='home-container'>
-        <section className='section1'>
+
           <h1 className='welcome-text'>به دایی علی (شعبه جدید) خوش آمدید</h1>
 
           <div className='description'>
@@ -58,11 +61,28 @@ export default function Home() {
             <MessageButton />
             <ContactButton onClick={scrollToFooter} />
           </div>
-        </section>
+
+          <Container>
+            <Row>
+              <Col md={4}>
+                <img src="./burger.webp" alt="burger" className="img-fluid custom-img" />
+              </Col>
+              <Col md={4}>
+                <img src="./pizza.webp" alt="pizza" className="img-fluid custom-img middle-img" />
+              </Col>
+              <Col md={4}>
+                <img src="./restaurant.webp" alt="front view" className="img-fluid custom-img" />
+              </Col>
+            </Row>
+        </Container>
+
+
 
         <div className='menu-groups' ref={menuGroupsRef}>
           <MenuGroups loading="lazy" />
         </div>
+
+        
 
 
 
@@ -70,4 +90,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
