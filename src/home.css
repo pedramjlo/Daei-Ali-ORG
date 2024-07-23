@@ -22,27 +22,27 @@ h2 {
     direction: rtl;
     margin-right: 7%;
     margin-left: 6%;
+    
 }
 
  
 .welcome-text {
     font-weight: 900;
-    letter-spacing: 0.8px;
+    letter-spacing: 1px;
     margin-top: 15%;
 }
 
 
 .description{
-    word-wrap: break-word;
-    word-break: break-word;
-    margin-top: 5%;
+    width: 20.5rem;
+    margin-top: 4.2%;
     margin-left: 5%;
 }
 
 
 
 .description span {
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
     font-size: 1.2em;
 }
 
@@ -54,8 +54,10 @@ h2 {
 
 
 #branch2{
-    display: block;
+    display: inline-block;
     padding-top: 12px;
+    width: auto;
+    padding-top: 20px;
 }
 
 .home-illust {
@@ -90,18 +92,20 @@ h2 {
 }
 
 .custom-img {
+    padding: 4%;
     max-width: 100%;
     position: relative;
     top: 10rem;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 
 .menu-groups {
-    margin-top: 60%;
-    padding-bottom: 15px;
+    margin-top: 55%;
+    padding-bottom: 40px;
     margin-right: 1%;
     margin-left: 1%;
+
 }
   
 

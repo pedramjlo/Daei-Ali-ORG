@@ -12,8 +12,11 @@
 body {
   background-color: #FF5F1F;
   margin: 0;
+  font-family: 'Beiruti', Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-/* hello d*/
 
 header {
   display: flex;
