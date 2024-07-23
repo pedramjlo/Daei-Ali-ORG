@@ -1,4 +1,4 @@
-import React, { useRef, Suspense, lazy } from 'react';
+import React, { useRef } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useInView } from 'react-intersection-observer';
@@ -8,9 +8,8 @@ import ContactButton from './contact';
 import MenuButton from './menu-btn';
 import MessageButton from './message-btn';
 import MenuGroups from './menu-groups';
+import Footer from './footer'; // Direct import
 import '../home.css';
-
-const LazyFooter = lazy(() => import('./footer'));
 
 export default function Home() {
   const menuGroupsRef = useRef(null);
@@ -76,11 +75,8 @@ export default function Home() {
         </div>
 
         <div ref={footerInViewRef}>
-          {footerInView && (
-            <Suspense fallback={<div>Loading...</div>}>
-              <LazyFooter ref={footerRef} />
-            </Suspense>
-          )}
+          {/* Directly render Footer */}
+          <Footer ref={footerRef} />
         </div>
       </div>
     </div>

@@ -1,8 +1,7 @@
 import React, { forwardRef } from 'react';
 import '../footer.css';
 
-import { IoLogoInstagram } from "react-icons/io5";
-import { IoCallOutline } from "react-icons/io5";
+import { IoLogoInstagram, IoCallOutline } from "react-icons/io5";
 import { LuMapPin } from "react-icons/lu";
 
 const Footer = forwardRef((props, ref) => {
