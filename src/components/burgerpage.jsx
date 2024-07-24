@@ -5,16 +5,13 @@ import '../card.css';
 const BurgerContent = () => {
     const [interacted, setInteracted] = useState(false);
 
+    // Effect runs only once on mount to check if interaction has occurred
     useEffect(() => {
-        // check for prior interaction
-        const interacted = localStorage.getItem('card-interacted');
-        if (interacted) {
-            setInteracted(true);
-        }
+        // This will ensure the card is highlighted only if no prior interaction is stored
+        setInteracted(false);
     }, []);
 
     const handleCardInteraction = () => {
-        localStorage.setItem('card-interacted', 'true');
         setInteracted(true);
     };
 
@@ -62,7 +59,7 @@ const BurgerContent = () => {
             </Card>
 
             <Card
-                title=" میلان"
+                title="میلان"
                 price="257t"
                 onExpand={handleCardInteraction}
             >
@@ -70,7 +67,7 @@ const BurgerContent = () => {
             </Card>
 
             <Card
-                title="تگزاس "
+                title="تگزاس"
                 price="288t"
                 onExpand={handleCardInteraction}
             >
@@ -78,7 +75,7 @@ const BurgerContent = () => {
             </Card>
 
             <Card
-                title="دبل فولی "
+                title="دبل فولی"
                 price="477t"
                 onExpand={handleCardInteraction}
             >
