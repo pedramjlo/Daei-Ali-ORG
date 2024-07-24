@@ -64,9 +64,9 @@ export default function Home() {
 
         <Container className='image-container'>
           <Row>
-            <LazyImage src="./burger.webp" alt="burger" className="img-fluid custom-img" />
-            <LazyImage src="./pizza.webp" alt="pizza" className="img-fluid custom-img middle-img" />
-            <LazyImage src="./restaurant.webp" alt="front view" className="img-fluid custom-img" />
+            <LazyImage src="./images/burger.webp" alt="burger" className="img-fluid custom-img" />
+            <LazyImage src="./images/pizza.webp" alt="pizza" className="img-fluid custom-img middle-img" />
+            <LazyImage src="./images/restaurant.webp" alt="front view" className="img-fluid custom-img" />
           </Row>
         </Container>
 

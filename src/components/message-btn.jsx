@@ -1,33 +1,28 @@
-import { FaRegMessage } from "react-icons/fa6";
+import React from 'react';
+import { FaInstagram } from "react-icons/fa";
 import '../buttons.css';
 
+export default function MessageButton() {
 
-
-
-
-export default function MessageButton(){
-    
     const MessageButtonStyle = {
         color: "black",
     }
 
     const iconStyle = {
         color: "black", 
-        fontSize: "1em",
+        fontSize: "1.3em",
     };
 
+    const handleRedirect = () => {
+        window.location.href = 'https://www.instagram.com/daei.ali_fastfood/';
+    }
+
     return (
-        <button className="menu-button" style={MessageButtonStyle}> 
-
-        <span>
-        ثبت پیام
-        </span>
-
-        <FaRegMessage style={iconStyle}  />
-
-        
+        <button className="menu-button" style={MessageButtonStyle} onClick={handleRedirect}> 
+            <span>
+                اینستاگرام ما 
+            </span>
+            <FaInstagram style={iconStyle} />
         </button>
     );
 }
-
-
