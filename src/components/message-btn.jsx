@@ -22,7 +22,7 @@ export default function MessageButton() {
             <span>
                 اینستاگرام ما 
             </span>
-            <FaInstagram style={iconStyle} />
+            <FaInstagram style={iconStyle} className='other-icon-button' />
         </button>
     );
 }

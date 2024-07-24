@@ -8,7 +8,7 @@ const DrinksContent = () => {
              <Card title="اسپرایت" price="25t">
             </Card>
 
-            <Card title="آب معدنی" price="25t">
+            <Card title="آب معدنی" price="6t">
             </Card>
 
             <Card title="کوکا کولا" price="25t">
@@ -23,7 +23,7 @@ const DrinksContent = () => {
             <Card title="فانتا" price="25t">
             </Card>
 
-            <Card title="Cold Brew" price="40t">
+            <Card title="Cold Brew" price="60t">
             </Card>
        </div>
     );

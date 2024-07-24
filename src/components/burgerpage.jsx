@@ -42,7 +42,7 @@ const BurgerContent = () => {
                 price="299t"
                 onExpand={handleCardInteraction}
             >
-                <p style={{ direction: "rtl" }}>2 عدد برگر 80 گرمی گوساله شنیسل مرغ گریل شده پنیر گودا سس برگر و سس خردل شیرین - پیاز خورد شده</p>
+                <p style={{ direction: "rtl" }}>2 عدد برگر 80 گرمی گوساله - شنیسل مرغ گریل شده پنیر گودا - سس برگر و سس خردل شیرین - پیاز خورد شده</p>
             </Card>
 
             <Card
@@ -58,7 +58,7 @@ const BurgerContent = () => {
                 price="259t"
                 onExpand={handleCardInteraction}
             >
-                <p style={{ direction: "rtl" }}>2 عدد برگر 80 گرمی گوساله - پنیر گودا - هالوپینو - پپرونی - سس برگر و سس چیلی تای - پیاز خورد شده</p>
+                <p style={{ direction: "rtl" }}>2 عدد برگر 80 گرمی گوساله - پنیر گودا - هالوپینو - پپرونی - سس برگر - سس چیلی تای - پیاز خورد شده</p>
             </Card>
 
             <Card
@@ -74,7 +74,7 @@ const BurgerContent = () => {
                 price="288t"
                 onExpand={handleCardInteraction}
             >
-                <p style={{ direction: "rtl" }}>2 عدد برگر 80 گرمی گوساله بیکن - پنیر گودا - قارچ با سس باربیکیو تفت داده شده - نان مک - سس برگر و سس خامه شیرین</p>
+                <p style={{ direction: "rtl" }}>2 عدد برگر 80 گرمی - گوساله بیکن - پنیر گودا - قارچ با سس باربیکیو تفت داده شده - نان مک - سس برگر و سس خامه شیرین</p>
             </Card>
 
             <Card

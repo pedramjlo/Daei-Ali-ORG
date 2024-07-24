@@ -6,10 +6,10 @@ import '../card.css';
 const MiniPizzaContent = () => {
     return(
         <div>
-            <Card title="پپرونی" price="130t">
+            <Card title="پپرونی" price="150t">
             </Card>
 
-            <Card title="ژامبون" price="145t">
+            <Card title="ژامبون" price="180t">
             </Card>
 
             <Card title=" مینس میت" price="195t">

@@ -33,4 +33,8 @@ button:active {
     button {
         width: 45vh;
     }
+
+    .other-icon-button {
+        color: #000000;
+    }
 }

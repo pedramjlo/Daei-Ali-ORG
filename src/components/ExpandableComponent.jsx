@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../ExpandableComponent.css';
 
+
+
 const ExpandableComponent = () => {
   const [expanded, setExpanded] = useState(false);
 

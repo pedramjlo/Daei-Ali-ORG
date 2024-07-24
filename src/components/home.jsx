@@ -11,6 +11,7 @@ import MenuGroups from './menu-groups';
 import Footer from './footer'; // Direct import
 import '../home.css';
 
+
 export default function Home() {
   const menuGroupsRef = useRef(null);
   const footerRef = useRef(null);

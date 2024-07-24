@@ -12,7 +12,7 @@ const ContactButton = ({ onClick }) => {
     return (
         <button className="menu-button" onClick={onClick}> 
             <span>ارتباط با دایی علی</span>
-            <RiContactsLine style={iconStyle} />
+            <RiContactsLine style={iconStyle} className='other-icon-button' />
         </button>
     );
 };
