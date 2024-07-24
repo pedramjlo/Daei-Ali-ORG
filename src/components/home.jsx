@@ -62,7 +62,7 @@ export default function Home() {
           <ContactButton onClick={scrollToFooter} />
         </div>
 
-        <Container>
+        <Container className='image-container'>
           <Row>
             <LazyImage src="./burger.webp" alt="burger" className="img-fluid custom-img" />
             <LazyImage src="./pizza.webp" alt="pizza" className="img-fluid custom-img middle-img" />
@@ -75,7 +75,6 @@ export default function Home() {
         </div>
 
         <div ref={footerInViewRef}>
-          {/* Directly render Footer */}
           <Footer ref={footerRef} />
         </div>
       </div>
