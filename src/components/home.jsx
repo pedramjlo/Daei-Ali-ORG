@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import Header from './header';
 import ContactButton from './contact';
 import MenuButton from './menu-btn';
-import MessageButton from './message-btn';
+import MessageButton from './insta-button';
 import MenuGroups from './menu-groups';
 import Footer from './footer'; // Direct import
 import '../home.css';
