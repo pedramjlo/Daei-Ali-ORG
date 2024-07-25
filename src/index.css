@@ -69,10 +69,7 @@ button {
 
 
 @media only screen and (min-width: 992px){
-  
-  header {
-    position: fixed;
-  }
+
 
   .logo-header img{
     width: 2em;
