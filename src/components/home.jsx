@@ -81,7 +81,7 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
 
 const LazyImage = ({ src, alt, className }) => {
   const { ref, inView } = useInView({
