@@ -1,7 +1,7 @@
 # INTRO
 پروژه منوی انلاین رستوران دایی علی. کرمان شهرک باهنر. نوشته شده توسط با ری اکت. اپلیکیشن تک صفحه ای.
 
-An online/digital menu project for an Iran، Kerman based fastfood restaurant. Written in Js and Reactjs library. an SPA(Signle Page Application). 
+An online/digital menu project for an Iran، Kerman based fastfood restaurant. Written in Js and Reactjs library. An SPA(Signle Page Application). 
 
 # UI Design
 طراحی رابط کاربری توسط خودم انجام شده. سابقا پروتوتایپی با جاوا اسکریپت خام کدنویسی و دیپلوی کردم، سپس از نو طراحی کردم. لینک عکس از دیزاین قبلی:‌ here: https://imgur.com/a/YoZt7c2
