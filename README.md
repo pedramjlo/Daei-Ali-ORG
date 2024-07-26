@@ -12,5 +12,7 @@ The UI was designed by myself. Previously created an initial prototype using van
 # Technologies
 | tech  |
 | ----- |
-| nodejs    |
-| bootstrap |
+| Nodejs    |
+| Bootstrap |
+| Reactsjs  |
+| Google Fonts |
