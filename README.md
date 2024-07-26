@@ -16,5 +16,6 @@ The UI was designed by myself. Previously created an initial prototype using van
 |   Bootstrap |
 |   Reactsjs  |
 |   Google Fonts |
+|   Webpack |
 
 # 
