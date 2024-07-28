@@ -15,7 +15,7 @@ const MiniPizzaContent = () => {
             <Card title=" مینس میت" price="195t">
             </Card>
 
-            <Card title="چیکن" price="150t">
+            <Card title="چیکن" price="165t">
             </Card>
 
             <Card title="مارگاریتا" price="90t">
