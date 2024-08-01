@@ -79,13 +79,11 @@ button {
   
   
   .logo-header {
-    position: absolute;
-    right: 10.2%;
+    padding-right: 120px
   }
 
   .zoodex {
-    position: absolute;
-    left: 10.2%;
+    padding-left: 135px;
   }
 
   .zoodex img {

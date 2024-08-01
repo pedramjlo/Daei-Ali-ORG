@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { animateScroll as scroll } from 'react-scroll';
+import React, { useRef, useEffect } from 'react';
+import { animateScroll as scroll, scroller } from 'react-scroll';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useInView } from 'react-intersection-observer';
 
@@ -8,9 +8,8 @@ import ContactButton from './contact';
 import MenuButton from './menu-btn';
 import MessageButton from './insta-button';
 import MenuGroups from './menu-groups';
-import Footer from './footer'; // Direct import
+import Footer from './footer';
 import '../home.css';
-
 
 export default function Home() {
   const menuGroupsRef = useRef(null);
@@ -19,11 +18,14 @@ export default function Home() {
 
   const scrollToMenuGroups = () => {
     if (menuGroupsRef.current) {
+      console.log('Scrolling to menu groups:', menuGroupsRef.current.offsetTop);
       scroll.scrollTo(menuGroupsRef.current.offsetTop + scrollOffset, {
         duration: 800,
         delay: 0,
         smooth: 'easeInOutQuart',
       });
+    } else {
+      console.warn('menuGroupsRef is not set yet.');
     }
   };
 
@@ -42,6 +44,12 @@ export default function Home() {
     triggerOnce: true,
     rootMargin: '0px 0px',
   });
+
+  useEffect(() => {
+    if (menuGroupsRef.current) {
+      console.log('Menu Groups Ref:', menuGroupsRef.current);
+    }
+  }, [menuGroupsRef.current]);
 
   return (
     <div>
@@ -71,7 +79,7 @@ export default function Home() {
           </Row>
         </Container>
 
-        <div className="menu-groups" ref={menuGroupsRef}>
+        <div ref={menuGroupsRef} className="menu-groups">
           <MenuGroups loading="lazy" />
         </div>
 
