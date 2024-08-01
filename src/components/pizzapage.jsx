@@ -12,7 +12,6 @@ const PizzaContent = () => {
             <Card title="چیکن " price="330t">
             </Card>
             
-
             <Card title="ژامبون" price="367t">
             </Card>
 
