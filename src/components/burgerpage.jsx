@@ -19,7 +19,7 @@ const BurgerContent = () => {
         <div>
             <Card
                 title="شیکاگو"
-                price="240t"
+                price="299t"
                 isHighlighted={!interacted} // highlight the first card if not interacted
                 onExpand={handleCardInteraction}
             >
@@ -28,7 +28,7 @@ const BurgerContent = () => {
 
             <Card
                 title="پاریس"
-                price="270t"
+                price="330t"
                 onExpand={handleCardInteraction}
             >
                 <p style={{ direction: "rtl" }}>2 عدد برگر 80 گرمی گوساله - پنیر گودا و پنیر ترکیبی - قارچ - سس برگر و سس خردل شیرین</p>
@@ -36,7 +36,7 @@ const BurgerContent = () => {
 
             <Card
                 title="کلورادو"
-                price="299t"
+                price="359t"
                 onExpand={handleCardInteraction}
             >
                 <p style={{ direction: "rtl" }}>2 عدد برگر 80 گرمی گوساله - شنیسل مرغ گریل شده پنیر گودا - سس برگر و سس خردل شیرین - پیاز خورد شده</p>
@@ -44,7 +44,7 @@ const BurgerContent = () => {
 
             <Card
                 title="فلوریدا"
-                price="255t"
+                price="325t"
                 onExpand={handleCardInteraction}
             >
                 <p style={{ direction: "rtl" }}>2 عدد برگر 80 گرمی گوساله - پنیر گودا - پیاز خورد شده - سس برگر و سس قارچ و سس خردل شیرین</p>
@@ -52,7 +52,7 @@ const BurgerContent = () => {
 
             <Card
                 title="مکزیکانو"
-                price="259t"
+                price="318t"
                 onExpand={handleCardInteraction}
             >
                 <p style={{ direction: "rtl" }}>2 عدد برگر 80 گرمی گوساله - پنیر گودا - هالوپینو - پپرونی - سس برگر - سس چیلی تای - پیاز خورد شده</p>
@@ -60,7 +60,7 @@ const BurgerContent = () => {
 
             <Card
                 title="میلان"
-                price="257t"
+                price="327t"
                 onExpand={handleCardInteraction}
             >
                 <p style={{ direction: "rtl" }}>2 برگر 80 گرمی گوساله پنیر گورگونزولا - پنیر گودا - گوجه خشک - سس برگر و سس پستو</p>
@@ -68,7 +68,7 @@ const BurgerContent = () => {
 
             <Card
                 title="تگزاس"
-                price="288t"
+                price="349t"
                 onExpand={handleCardInteraction}
             >
                 <p style={{ direction: "rtl" }}>2 عدد برگر 80 گرمی گوساله - بیکن - پنیر گودا - قارچ با سس باربیکیو تفت داده شده - نان مک - سس برگر و سس خامه شیرین</p>
@@ -76,7 +76,7 @@ const BurgerContent = () => {
 
             <Card
                 title="دبل فولی"
-                price="477t"
+                price="518t"
                 onExpand={handleCardInteraction}
             >
                 <p style={{ direction: "rtl" }}>4 عدد برگر 80 گرمی گوساله - پنیر گودا 2 عدد - سس برگر و سس خردل شیرین و سس قارج - بیکن کریسپی</p>
