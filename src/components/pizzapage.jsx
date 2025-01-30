@@ -28,7 +28,7 @@ const PizzaContent = () => {
             <Card title="بوقلمون پستو" price="387t">
             </Card>
 
-            <Card title="مارگاریتا" price="170t">
+            <Card title="مارگاریتا" price="210t">
             </Card>
 
             <Card title="رست بیف" price="477t">

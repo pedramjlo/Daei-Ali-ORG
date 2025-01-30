@@ -42,3 +42,27 @@ ul li {
         font-weight: 600;
     }
 }
+
+.winking-text {
+    font-size: 2em;
+    font-weight: bold;
+    animation: color-wink 1s infinite alternate;
+}
+
+@keyframes color-wink {
+    0% {
+        color: white;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.6),
+                     0 0 10px rgba(255, 255, 255, 0.6);
+    }
+    50% {
+        color: yellow;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                     0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        color: white;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.6),
+                     0 0 10px rgba(255, 255, 255, 0.6);
+    }
+}
